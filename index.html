@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de puntos</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" href="img/peon.ico">
+</head>
+<body>
+    <section class="contenedor">
+        <div class="contador contador__negras centrar">
+            <h2 id="contadorNegras">0</h2>
+        </div>
+
+        <div class="turno__negras centrar" id="turnoNegras" onclick="cambiarTurno('turnoNegras', 'turnoBlancas', 'contadorBlancas')">
+            <h2>Terminar Turno</h2>
+        </div>
+
+        <div class="sumar__negras centrar" id="sumarNegras" onclick="sumar('contadorNegras')">
+            <h2>+</h2>
+        </div>
+        <div class="restar__negras centrar" id="restarNegras" onclick="restar('contadorNegras')">
+            <h2>-</h2>
+        </div>
+
+        <div class="empezar_turnos centrar" id="empezarPartida" onclick="empezar()">
+            <h2>Empezar</h2>
+        </div>
+
+        <div class="sumar__blancas centrar" id="sumarBlancas" onclick="sumar('contadorBlancas')">
+            <h2>+</h2>
+        </div>
+        <div class="restar__blancas centrar" id="restarBlancas" onclick="restar('contadorBlancas')">
+            <h2>-</h2>
+        </div>
+
+        <div class="turno__blancas centrar" id="turnoBlancas" onclick="cambiarTurno('turnoBlancas', 'turnoNegras', 'contadorNegras')">
+            <h2>Terminar Turno</h2>
+        </div>
+
+        <div class="contador contador__blancas centrar">
+            <h2 id="contadorBlancas">0</h2>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

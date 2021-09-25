@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(70deg, #694c12, #d79c24);
+    font-size: 2vh;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    'contadorNegras contadorNegras'
+    'turnoNegras turnoNegras'
+    'sumarNegras restarNegras'
+    'empezar empezar'
+    'sumarBlancas restarBlancas'
+    'turnoBlancas turnoBlancas'
+    'contadorBlancas contadorBlancas';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7,1fr);
+    grid-gap: 10px;
+    width: 90vw;
+    height: 90vh;
+    /*background-color: #ca3;*/
+}
+
+.contador__negras{
+    grid-area: contadorNegras;
+    background-color: #ce0;
+    color: #000;
+}
+
+.turno__negras{
+    grid-area: turnoNegras;
+    background-color: #000;
+    color: #fff;
+    border: 10px solid #000;
+}
+
+.sumar__negras{
+    grid-area: sumarNegras;
+    background-color: #333;
+    color: #fff;
+}
+.restar__negras{
+    grid-area: restarNegras;
+    background-color: #333;
+    color: #fff;
+}
+
+.empezar_turnos{
+    grid-area: empezar;
+    background-color: #0c0;
+}
+
+.sumar__blancas{
+    grid-area: sumarBlancas;
+    background-color: #ccc;
+    color: #000;
+}
+.restar__blancas{
+    grid-area: restarBlancas;
+    background-color: #ccc;
+    color: #000;
+}
+
+.turno__blancas{
+    grid-area: turnoBlancas;
+    background-color: #fff;
+    color: #000;
+    border: 10px solid #000;
+}
+
+.contador__blancas{
+    grid-area: contadorBlancas;
+    background-color: #ce0;
+    color: #000;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 700px){
+    .contenedor{
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .contenedor{
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .contenedor{
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .contenedor{
+        width: 40vw;
+    }
+}
